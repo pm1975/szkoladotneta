@@ -2,31 +2,22 @@
 
 namespace HelloWorld
 {
-    //PascalCase
+
     public class Program
     {
         static void Main(string[] args)
         {
-            //camelCase
-            string firstName = "Piotr";
+            double a = 20;
+            double b = 10;
 
-            //UPPER_CASE
-            const double PI_NUMBER = 3.14;
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("To jest nowy napis");
-            if (PI_NUMBER > 2)
-            {
-                WritePiNumber(PI_NUMBER);
-            }
-        }
+            Math math = new Math();
+            double addResult = math.Add(a, b);
+            double substractResult = math.Substract(a, b);
 
-        private static string WritePiNumber(double pi)
-        {
-            return ("3.14");
+            Console.WriteLine(addResult.ToString());
+            Console.WriteLine(substractResult.ToString());
+
         }
     }
 
-    public interface IProgram
-    {
-    }
 }
